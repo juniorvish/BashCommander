@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BashCommander</title>
+    <link rel="stylesheet" href="css/tailwind.min.css">
+</head>
+<body class="bg-gray-100">
+    <div class="container mx-auto px-4 py-10">
+        <h1 class="text-4xl font-bold mb-6">BashCommander</h1>
+        <form id="bash-command-form" class="bg-white p-6 rounded shadow">
+            <div class="mb-4">
+                <label for="user-input" class="block text-gray-700">Enter your natural language command:</label>
+                <input type="text" id="user-input" class="w-full mt-2 p-2 border border-gray-300 rounded">
+            </div>
+            <button type="submit" id="submit-button" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Convert to Bash Command</button>
+        </form>
+        <div class="mt-6">
+            <h2 class="text-2xl font-bold mb-4">Bash Command:</h2>
+            <pre id="output" class="bg-gray-200 p-4 rounded"></pre>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
